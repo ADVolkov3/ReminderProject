@@ -46,34 +46,6 @@ class ToDoListViewController: UIViewController {
         }
         navigationController?.pushViewController(vc, animated: true)
     }
-//    @IBAction func didTapTest() {
-//        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound], completionHandler: { success, error in
-//            if success {
-//                self.scheduleTest()
-//            }
-//            else if error != nil {
-//                print("error occurred")
-//            }
-//        })
-//    }
-//    func scheduleTest() {
-//        let content = UNMutableNotificationContent()
-//        content.title = "Hello"
-//        content.sound = .default
-//        content.body = "My long body. My long body. My long body. My long body. My long body. My long body. "
-//
-//        let targetDate = Date().addingTimeInterval(10)
-//        let trigger = UNCalendarNotificationTrigger(dateMatching: Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second],
-//                                                                                                  from: targetDate),
-//                                                    repeats: false)
-//
-//        let request = UNNotificationRequest(identifier: "some_long_id", content: content, trigger: trigger)
-//        UNUserNotificationCenter.current().add(request, withCompletionHandler: { error in
-//            if error != nil {
-//                print("something went wrong")
-//            }
-//        })
-//    }
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -109,6 +81,14 @@ extension ToDoListViewController: UITableViewDataSource {
         cell.textLabel?.font = UIFont(name: "Arial", size: 25)
         cell.detailTextLabel?.font = UIFont(name: "Arial", size: 22)
         return cell
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            tasks.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
+            
+        }
     }
 }
 

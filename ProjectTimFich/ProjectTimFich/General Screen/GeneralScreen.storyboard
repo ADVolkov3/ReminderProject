@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BoU-GO-55l">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--General Tab Bar Controller-->
+        <scene sceneID="5aT-XM-K5e">
+            <objects>
+                <tabBarController storyboardIdentifier="1234" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="BoU-GO-55l" customClass="GeneralTabBarController" customModule="ProjectTimFich" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TVp-sK-X0j">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="6rl-WH-xke" kind="relationship" relationship="viewControllers" id="Z7h-u9-aIS"/>
+                        <segue destination="h5C-AF-7Dg" kind="relationship" relationship="viewControllers" id="mHi-Eb-KKf"/>
+                        <segue destination="OkA-xS-jqv" kind="relationship" relationship="viewControllers" id="pxo-N8-cO2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LXO-Ck-IK5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="873"/>
+        </scene>
+        <!--Setings-->
+        <scene sceneID="X1U-T7-qIP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Setings" id="hDy-wI-plf" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="uGG-z5-JcB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QdR-m1-xtS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2125" y="200"/>
+        </scene>
+        <!--ScrrenOfAdding-->
+        <scene sceneID="neM-ag-mb9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ScrrenOfAdding" id="job-Yh-JBy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="LTs-1p-jgM"/>
+                    <navigationItem key="navigationItem" id="jWy-2r-4jq"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jeE-xC-QTA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2162" y="1608"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jfQ-uW-ehd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6rl-WH-xke" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="icons8-контрольный-список-30" id="NOb-4O-Qzn"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" id="MXC-Mp-j16">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iC9-IJ-Z8T" kind="relationship" relationship="rootViewController" id="VOQ-UO-N2I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C1b-xt-Bof" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1191" y="873"/>
+        </scene>
+        <!--ScreenOfAllNotification-->
+        <scene sceneID="YnN-QQ-nXc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ScreenOfAllNotification" id="iC9-IJ-Z8T" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1j5-GV-lbs"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SO8-fi-SEc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2195" y="873"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3En-Zl-6cd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h5C-AF-7Dg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="icons8-плюс-30" id="6CA-bR-1QH"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" id="cs3-Iz-sMG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="job-Yh-JBy" kind="relationship" relationship="rootViewController" id="Tez-Oh-hDf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="byu-ab-J06" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1190" y="1608"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5zr-W1-alb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OkA-xS-jqv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="icons8-привод-30" id="JRd-2s-j7J"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" id="qzm-ib-KyG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hDy-wI-plf" kind="relationship" relationship="rootViewController" id="DNO-Lq-TnI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tmh-cc-LLH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1190" y="200"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-контрольный-список-30" width="30" height="30"/>
+        <image name="icons8-плюс-30" width="30" height="30"/>
+        <image name="icons8-привод-30" width="30" height="30"/>
+    </resources>
+</document>
